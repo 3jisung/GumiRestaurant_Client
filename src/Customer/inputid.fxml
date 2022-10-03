@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="100.0" prefWidth="350.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Customer.InputID">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label layoutX="54.0" layoutY="14.0" text="아이디를 입력해 주세요. (10자 이내)" />
+    <TextField id="nickname" fx:id="txt_id" layoutX="54.0" layoutY="39.0" prefHeight="23.0" prefWidth="159.0" />
+    <Button id="change" fx:id="check" layoutX="218.0" layoutY="41.0" mnemonicParsing="false" onMouseClicked="#check" text="중복검사" />
+    <Button fx:id="exit" layoutX="291.0" layoutY="41.0" mnemonicParsing="false" onMouseClicked="#close" text="취소" />
+  </children>
+</AnchorPane>

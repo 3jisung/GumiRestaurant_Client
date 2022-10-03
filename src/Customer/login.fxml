@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane disable="false" focusTraversable="false" prefHeight="275.0" prefWidth="400.0" snapToPixel="true" visible="true" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Customer.Login">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label layoutX="86.0" layoutY="102.0" prefHeight="27.0" prefWidth="58.5" text="ID :" />
+    <Label layoutX="86.0" layoutY="147.0" prefHeight="20.000099999997474" prefWidth="73.0" text="password :" />
+    <TextField fx:id="t1" layoutX="191.0" layoutY="102.0" prefWidth="152.0" />
+    <PasswordField fx:id="t2" layoutX="191.0" layoutY="147.0" prefWidth="151.99990000000253" />
+    <Button fx:id="ok" layoutX="141.0" layoutY="194.0" mnemonicParsing="false" onMouseClicked="#click1" text="ok" />
+    <Button fx:id="cancel" layoutX="200.0" layoutY="195.0" mnemonicParsing="false" onMouseClicked="#click2" text="cancel" />
+    <Label fx:id="title" alignment="CENTER" cache="true" cacheHint="DEFAULT" contentDisplay="CENTER" depthTest="INHERIT" labelFor="$cancel" layoutX="66.0" layoutY="30.0" mnemonicParsing="false" mouseTransparent="false" opacity="1.0" pickOnBounds="false" prefHeight="30.0" prefWidth="269.0" text="구미시 음식점 정보공유 시스템" textAlignment="LEFT" textFill="#00cc21" textOverrun="ELLIPSIS" wrapText="false">
+      <font>
+        <Font name="Arial Bold" size="18.0" />
+      </font>
+    </Label>
+    <Button fx:id="sign" layoutX="301.0" layoutY="227.0" mnemonicParsing="false" onMouseClicked="#signUp" text="회원가입" />
+  </children>
+</AnchorPane>

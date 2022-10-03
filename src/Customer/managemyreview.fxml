@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Customer.ManageMyReview">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label alignment="CENTER" layoutX="30.0" layoutY="14.0" prefHeight="51.0" prefWidth="440.0" text="내 리뷰 관리">
+      <font>
+        <Font size="24.0" />
+      </font>
+    </Label>
+    <ListView id="list" fx:id="listview" layoutX="30.0" layoutY="100.0" prefHeight="344.0" prefWidth="440.0" />
+    <Button fx:id="exit" layoutX="426.0" layoutY="460.0" mnemonicParsing="false" onMouseClicked="#close" text="이전" />
+    <Label layoutX="30.0" layoutY="71.0" text="리뷰 클릭 시 삭제 선택 가능" />
+  </children>
+</AnchorPane>

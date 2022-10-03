@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="200.0" prefWidth="350.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Customer.SignUpReview">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label layoutX="86.0" layoutY="14.0" text="리뷰를 작성해 주세요(45자 이내)" />
+    <TextArea fx:id="reviewValue" layoutX="14.0" layoutY="36.0" prefHeight="111.0" prefWidth="236.9998779296875" wrapText="true" />
+    <Button layoutX="275.0" layoutY="66.0" mnemonicParsing="false" onMouseClicked="#createReview" text="등록" />
+    <Button fx:id="exit" layoutX="275.0" layoutY="105.0" mnemonicParsing="false" onMouseClicked="#close" text="취소" />
+    <RadioButton fx:id="rb1" layoutX="14.0" layoutY="165.0" mnemonicParsing="false" text="1점">
+      <toggleGroup>
+        <ToggleGroup fx:id="g1" />
+      </toggleGroup>
+    </RadioButton>
+    <RadioButton fx:id="rb2" layoutX="67.0" layoutY="165.0" mnemonicParsing="false" text="2점" toggleGroup="$g1" />
+    <RadioButton fx:id="rb3" layoutX="120.0" layoutY="165.0" mnemonicParsing="false" text="3점" toggleGroup="$g1" />
+    <RadioButton fx:id="rb4" layoutX="173.0" layoutY="165.0" mnemonicParsing="false" text="4점" toggleGroup="$g1" />
+    <RadioButton fx:id="rb5" layoutX="226.0" layoutY="165.0" mnemonicParsing="false" text="5점" toggleGroup="$g1" />
+  </children>
+</AnchorPane>

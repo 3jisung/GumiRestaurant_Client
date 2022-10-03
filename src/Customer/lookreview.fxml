@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Customer.LookReview">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label alignment="CENTER" layoutX="197.0" layoutY="162.0" prefHeight="43.0" prefWidth="109.0" text="리뷰">
+      <font>
+        <Font size="24.0" fx:id="x1" />
+      </font>
+    </Label>
+    <ListView fx:id="listview" layoutX="20.0" layoutY="215.0" prefHeight="204.0" prefWidth="462.0" />
+    <Button fx:id="btn1" layoutX="319.0" layoutY="449.0" mnemonicParsing="false" onMouseClicked="#signUp" text="리뷰 작성하기" />
+    <Button fx:id="exit" layoutX="438.0" layoutY="449.0" mnemonicParsing="false" onMouseClicked="#close" text="이전" />
+    <TextArea fx:id="resDetail" editable="false" layoutX="20.0" layoutY="75.0" prefHeight="88.0" prefWidth="462.0" wrapText="true" />
+    <Label fx:id="resName" alignment="CENTER" font="$x1" layoutX="20.0" layoutY="14.0" prefHeight="43.0" prefWidth="462.0" text="가게이름" />
+  </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Customer.SignUp">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label alignment="CENTER" layoutX="202.0" layoutY="26.0" text="회원가입">
+      <font>
+        <Font size="24.0" />
+      </font>
+    </Label>
+    <Label layoutX="79.0" layoutY="106.0" text="아이디 :" textFill="BLACK">
+      <font>
+        <Font size="15.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="64.0" layoutY="163.0" text="패스워드 :" />
+    <Label font="$x1" layoutX="29.0" layoutY="220.0" text="패스워드 확인 :" />
+    <Label font="$x1" layoutX="79.0" layoutY="277.0" text="닉네임 :" />
+    <Label font="$x1" layoutX="79.0" layoutY="335.0" prefHeight="19.000099999997474" prefWidth="55.0" text="주소지 :" />
+    <Button layoutX="336.0" layoutY="335.0" mnemonicParsing="false" onMouseClicked="#choiceAddress" text="주소 선택" />
+    <Button fx:id="btn_ck1" layoutX="336.0" layoutY="106.0" mnemonicParsing="false" onMouseClicked="#check1" text="아이디 입력" />
+    <Button fx:id="btn_ck2" layoutX="336.0" layoutY="277.0" mnemonicParsing="false" onMouseClicked="#check2" text="닉네임 입력" />
+    <Label fx:id="txt_check1" layoutX="427.0" layoutY="106.0" prefWidth="38.0" text="">
+      <textFill>
+        <Color blue="1.000" green="0.160" red="0.000" fx:id="x2" />
+      </textFill>
+    </Label>
+    <Label fx:id="txt_check2" layoutX="427.0" layoutY="279.0" prefWidth="38.0" text="" textFill="$x2" />
+    <TextField fx:id="txt_id" editable="false" layoutX="157.0" layoutY="105.0" prefHeight="21.0" prefWidth="161.0" />
+    <TextField id="txt_pwd" fx:id="txt_pwd1" layoutX="157.0" layoutY="162.0" prefHeight="21.0" prefWidth="161.0" />
+    <TextField fx:id="txt_pwd2" layoutX="157.0" layoutY="219.0" prefHeight="21.0" prefWidth="161.0" />
+    <TextField fx:id="txt_nick" editable="false" layoutX="157.0" layoutY="276.0" prefHeight="21.0" prefWidth="161.0" />
+    <Button fx:id="btn_sign" layoutX="157.0" layoutY="449.0" mnemonicParsing="false" onMouseClicked="#sign" text="가입" />
+    <Button fx:id="exit" layoutX="269.0" layoutY="449.0" mnemonicParsing="false" onMouseClicked="#close" text="이전" />
+    <TextArea fx:id="txt_add" editable="false" layoutX="157.0" layoutY="316.0" prefHeight="79.0" prefWidth="161.0" wrapText="true" />
+  </children>
+</AnchorPane>

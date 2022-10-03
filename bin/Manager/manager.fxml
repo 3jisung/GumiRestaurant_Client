@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Manager.Manager">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label alignment="CENTER" layoutX="145.0" layoutY="14.0" prefHeight="45.0" prefWidth="210.0" text="관리자 모드">
+      <font>
+        <Font name="Arial Black" size="20.0" />
+      </font>
+    </Label>
+    <Line endX="500.0" layoutY="75.0" startX="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+    <Button fx:id="btn_DB" layoutX="72.0" layoutY="129.0" mnemonicParsing="false" onMouseClicked="#renewalDB" prefHeight="63.0" prefWidth="162.0" text="DB 최신화" />
+    <Button fx:id="exit" layoutX="376.0" layoutY="27.0" mnemonicParsing="false" onMouseClicked="#close" text="로그아웃" />
+    <Button fx:id="btn_Rv" layoutX="282.0" layoutY="129.0" mnemonicParsing="false" onMouseClicked="#manageReview" prefHeight="63.0" prefWidth="162.0" text="리뷰 관리" />
+  </children>
+</AnchorPane>

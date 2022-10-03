@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="Customer" prefHeight="500.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Customer.Customer">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label fx:id="text_title" alignment="CENTER" layoutX="120.0" layoutY="14.0" prefHeight="40.0" prefWidth="262.0" text="닉네임 님 환영합니다~!">
+      <font>
+        <Font size="15.0" />
+      </font>
+    </Label>
+    <TabPane layoutX="3.0" layoutY="62.0" prefHeight="424.0" prefWidth="495.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab fx:id="tab1" text="홈">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="339.0" prefWidth="497.0">
+              <children>
+                <Button fx:id="btn1" layoutX="61.0" layoutY="47.0" mnemonicParsing="false" onMouseClicked="#lookRestaurants" prefHeight="150.0" prefWidth="150.0" text="음식점 조회" />
+                <Button fx:id="btn2" layoutX="283.0" layoutY="47.0" mnemonicParsing="false" onMouseClicked="#myReview" prefHeight="150.0" prefWidth="150.0" text="내 리뷰 관리" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="tab2" text="내정보">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <Label layoutX="61.0" layoutY="50.0" text="닉네임 : " />
+                <TextField fx:id="text_nick" editable="false" layoutX="116.0" layoutY="47.0" prefWidth="200.0" text="닉네임" />
+                <Button fx:id="btn_nick" layoutX="340.0" layoutY="48.0" mnemonicParsing="false" onMouseClicked="#changeNickname" text="닉네임 변경" />
+                <Label layoutX="61.0" layoutY="83.0" text="주소지 : " />
+                <TextArea fx:id="text_add" editable="false" layoutX="116.0" layoutY="83.0" prefWidth="200.0" text="주소" wrapText="true" />
+                <Button fx:id="btn_add" layoutX="340.0" layoutY="84.0" mnemonicParsing="false" onMouseClicked="#changeAddress" text="주소지 변경" />
+                <Button fx:id="btn_password" layoutX="340.0" layoutY="316.0" mnemonicParsing="false" onMouseClicked="#changePassword" text="비밀번호 변경" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+    <Button fx:id="exit" layoutX="382.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#close" text="로그아웃" />
+  </children>
+</AnchorPane>
